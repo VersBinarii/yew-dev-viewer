@@ -3,7 +3,6 @@ use std::str::FromStr;
 use stdweb::web::{FormData, FormDataEntry};
 use uuid::Uuid;
 use yew::prelude::*;
-use yew::services::ConsoleService;
 
 #[derive(Debug, Serialize, Deserialize, Copy, Clone)]
 pub enum CheckMethod {
@@ -141,9 +140,6 @@ impl From<FormData> for Device {
                 ..Default::default()
             })
             .collect();
-
-        ConsoleService::new()
-            .log(&format!("Device: {}, {}, {:?}", name, location, interfaces));
 
         Self {
             name,

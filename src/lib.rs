@@ -29,11 +29,11 @@ impl Renderable<RootModel> for RootModel {
             <section class="section">
                 <div class="continer">
                 <h2 class="title">
-                  {"My nodes"}
-                </h2>
+            {"My nodes"}
+            </h2>
                 <Devices />
-                </div>
-            </section>
+                f</div>
+                </section>
         }
     }
 }

@@ -1,7 +1,7 @@
 use crate::device::{Device, Interface};
 use failure::Error;
 use stdweb::unstable::TryInto;
-use stdweb::web::{event::IEvent, Element, FormData, FormDataEntry};
+use stdweb::web::{event::IEvent, Element, FormData};
 use yew::format::Json;
 use yew::prelude::*;
 use yew::services::{
